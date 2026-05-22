@@ -1,14 +1,30 @@
-import pandas as pd
+# generate full name
+# generate age
+# generate zipcode
+import os
 
-# Create a sample DataFrame
-# var = {"key1": ["value1"],
-#        "key2": ["value1", "value2"],
-#        "key3": ["value1", "value2", "value3"]}
-data = {
-    "Name": ["Alice", "Bob", "Charlie", "David"],
-    "Age": [25, 30, 35, 40],
-    "City": ["New York", "Los Angeles", "Chicago", "Houston"],
-}
-#
-df_data = pd.DataFrame(data)
-print(df_data)
+# data directory
+generated_data = "generated_data"
+
+first_names = []
+last_names = []
+
+with open(os.path.join(generated_data, "first-names.txt"), "r") as f:
+    first_names = f.read().splitlines()
+
+with open(os.path.join(generated_data, "last-names.txt"), "r") as f:
+    last_names = f.read().splitlines()
+
+print("\n=================================")
+print("FIRST NAMES AND LAST NAMES")
+print("=================================\n")
+
+print(first_names)
+print()
+print(last_names)
+
+print("\n=================================")
+print("GENERATED FULL NAMES")
+print("=================================\n")
+
+print("IN PROGRESS...")
