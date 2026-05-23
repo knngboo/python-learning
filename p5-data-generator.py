@@ -33,7 +33,6 @@ print(full_names)
 print("\n========================")
 print("|||| AGE GENERATOR ||||")
 print("========================\n")
-
 import random
 
 ages = []
@@ -46,9 +45,19 @@ for i in range(total_first_names):
 print("\nRAW LIST\n==========")
 print(ages)
 
-# ===============================
-# |||| ZIP CODE GENERATOR ||||
-# ===============================
+print("\n==============================")
+print("|||| ZIP CODE GENERATOR ||||")
+print("==============================\n")
+zip_codes = []
+
+with open(os.path.join(generated_data, "zip-codes.txt"), "r") as f:
+    zip_codes = f.read().splitlines()
+
+for i in range(total_first_names):
+    print(zip_codes[i])
+
+print("\nRAW LIST\n==========")
+print(zip_codes)
 
 # ===================================
 # |||| USER DICTIONARY GENERATOR ||||
