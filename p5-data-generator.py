@@ -1,6 +1,10 @@
 # generate full name
 # generate age
 # generate zipcode
+# generate user dictionary
+print("\n================================")
+print("|||| FULL NAME GENERATOR ||||")
+print("================================\n")
 import os
 
 # data directory
@@ -16,24 +20,34 @@ with open(os.path.join(generated_data, "first-names.txt"), "r") as f:
 with open(os.path.join(generated_data, "last-names.txt"), "r") as f:
     last_names = f.read().splitlines()
 
-print("\n=================================")
-print("FIRST NAMES")
-print("=================================\n")
-
-for x in first_names:
-    print(x)
-
-print("\n=================================")
-print("LAST NAMES")
-print("=================================\n")
-
-for x in last_names:
-    print(x)
-
-print("\n=================================")
-print("GENERATED FULL NAMES")
-print("=================================\n")
-
 for i in range(32):
     full_name = first_names[i] + " " + last_names[i]
+    full_names.append(full_name)
     print(full_name)
+
+print("\nRAW LIST\n==========")
+print(full_names)
+
+print("\n========================")
+print("|||| AGE GENERATOR ||||")
+print("========================\n")
+
+import random
+
+ages = []
+
+for i in range(32):
+    age = int(random.triangular(18, 65, 25))
+    ages.append(age)
+    print(age)
+
+print("\nRAW LIST\n==========")
+print(ages)
+
+# ===============================
+# |||| ZIP CODE GENERATOR ||||
+# ===============================
+
+# ===================================
+# |||| USER DICTIONARY GENERATOR ||||
+# ===================================
