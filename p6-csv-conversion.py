@@ -5,7 +5,7 @@ import pandas as pd
 # var = {"key1": ["value1"],
 #        "key2": ["value1", "value2"],
 #        "key3": ["value1", "value2", "value3"]}
-dictionary_data = {
+users_csv = {
     "Membership": [],
     "Age": [],
     "Name": [],
@@ -16,6 +16,6 @@ dictionary_data = {
 }
 # Create a DataFrame from the dictionary
 # use pd.DataFrame() to create a DataFrame
-df_data = pd.DataFrame(dictionary_data)
+df_data = pd.DataFrame(users_csv)
 
 print(df_data)

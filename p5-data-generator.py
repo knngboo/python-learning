@@ -59,6 +59,17 @@ for i in range(total_first_names):
 print("\nRAW LIST\n==========")
 print(zip_codes)
 
-# ===================================
-# |||| USER DICTIONARY GENERATOR ||||
-# ===================================
+print("\n=====================================")
+print("|||| USER DICTIONARY ||||")
+print("=====================================\n")
+full_users = []
+
+for i in range(total_first_names):
+    user = {
+        "Name": full_names[i],
+        "Age": ages[i],
+        "Zip Code": zip_codes[i],
+    }
+    full_users.append(user)
+
+print(full_users)
