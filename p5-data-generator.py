@@ -62,6 +62,8 @@ print(zip_codes)
 print("\n=====================================")
 print("|||| USER DICTIONARY ||||")
 print("=====================================\n")
+import pandas as pd
+
 full_users = []
 
 for i in range(total_first_names):
@@ -73,3 +75,7 @@ for i in range(total_first_names):
     full_users.append(user)
 
 print(full_users)
+
+df_users = pd.DataFrame(full_users)
+print("\nDATAFRAME\n==========")
+print(df_users)
