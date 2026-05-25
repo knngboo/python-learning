@@ -30,6 +30,7 @@ for i in range(total_first_names):
 print("\nRAW LIST\n==========")
 print(full_names)
 
+# the age is the only randomly generated data, the rest is read from files. This is to show how to generate random data and also how to read data from files and combine them into a user dictionary. The age is generated using a triangular distribution, which is a continuous probability distribution with lower limit, upper limit, and mode. In this case, the lower limit is 18, the upper limit is 65, and the mode is 25. This means that most of the ages will be around 25, but there will be some ages that are younger than 18 and some that are older than 65.
 print("\n========================")
 print("|||| AGE GENERATOR ||||")
 print("========================\n")
